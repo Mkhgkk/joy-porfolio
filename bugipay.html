@@ -20,7 +20,7 @@
       crossorigin="anonymous"
     /> -->
 
-    <title>Bugimall</title>
+    <title>Bugipay</title>
   </head>
   <body>
     <!-- hero section  -->
@@ -42,14 +42,19 @@
         </div>
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a
+              class="nav-link nav active"
+              aria-current="page"
+              href="/index.html"
+              >Home</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
+            <a class="nav-link nav" href="/index.html#about">About</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link github-button" href="#">View Site</a>
-          </li> -->
+          <li class="nav-item">
+            <a class="nav-link nav" href="/index.html#contact">Contact</a>
+          </li>
         </ul>
       </div>
       <div class="container">
@@ -70,7 +75,7 @@
     <!-- about section -->
     <section id="unifella-about" class="container">
       <div style="text-align: center; padding: 70px">
-        <h1 style="font-family: Open Sans; font-weight: 900">About Bugimall</h1>
+        <h1 style="font-family: Open Sans; font-weight: 900">About Bugipay</h1>
       </div>
       <div class="row">
         <div class="col">
@@ -86,20 +91,17 @@
           </p>
         </div>
         <div class="col">
-          <img
-            src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHVuaXZlcnNpdHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            alt=""
-          />
+          <img style="width: 100%" src="/assets/bugipayMain.jpeg" alt="" />
         </div>
       </div>
     </section>
 
     <!-- technologies section -->
     <section class="container">
-      <div style="text-align: center; padding: 70px">
+      <div style="text-align: center; padding: 70px; margin-top: 30px">
         <h1 style="font-family: Open Sans; font-weight: 900">Technologies</h1>
       </div>
-      <div class="row">
+      <div class="row" style="text-align: center">
         <div class="col">
           <img
             src="https://img1.baidu.com/it/u=811927623,4166245411&fm=26&fmt=auto"
@@ -142,7 +144,7 @@
 
     <!-- showcase section -->
     <section class="container">
-      <div style="text-align: center; padding: 70px">
+      <div style="text-align: center; padding: 70px; margin-top: 30px">
         <h1 style="font-family: Open Sans; font-weight: 900">Show case</h1>
       </div>
 
@@ -177,10 +179,16 @@
 
       <div class="row gx-1" style="padding-top: 50px; align-items: center">
         <div class="col-6">
-          <h3 style="font-family: Open Sans; font-weight: 900">
+          <h3
+            style="
+              font-family: Open Sans;
+              font-weight: 900;
+              padding-right: 30px;
+            "
+          >
             Convenience² + security 🔒 = Bugipay.
           </h3>
-          <p>
+          <p style="padding-right: 30px">
             Bugipay adopts the use of QR codes widely throughout the app due to
             the simplicity and convenience they offer. Users can receive money
             by simply showing their “Receive Payment” QR codes, and the other
@@ -201,7 +209,7 @@
 
       <div class="row gx-1" style="padding-top: 50px">
         <div class="col-6">
-          <p>
+          <p style="padding-right: 30px">
             Bugipay also packs a ton load of fun features such as lucky
             envelopes, and many more to keep users entertained.
           </p>
@@ -212,7 +220,7 @@
           />
         </div>
         <div class="col-6">
-          <p>
+          <p style="padding-right: 30px">
             Dark mode is also supported even for devices that dont officially
             support dark mode, users can still go to the settings page and
             enable dark mode for Bugipay.
@@ -236,20 +244,34 @@
       "
     >
       <div class="row" style="width: 30%">
-        <div onclick="navigate('/index.html')" class="col pointer">Home</div>
-        <div onclick="navigate('/index.html#about')" class="col pointer">
-          About Me
+        <div onclick="navigate('/index.html')" class="col pointer footerNav">
+          Home
         </div>
-        <div onclick="navigate('/index.html#contact')" class="col pointer">
+        <div
+          onclick="navigate('/index.html#about')"
+          class="col pointer footerNav"
+        >
+          About
+        </div>
+        <div
+          onclick="navigate('/index.html#contact')"
+          class="col pointer footerNav"
+        >
           Contact
         </div>
       </div>
-      <div class="row" style="padding-top: 20px; font-size: 20px">
-        <div class="col pointer">
-          <i class="fab fa-instagram"></i>
+      <div class="row" style="padding-top: 40px; font-size: 20px">
+        <div
+          class="col pointer"
+          onclick="window.open('https://www.instagram.com/hyeyeah/')"
+        >
+          <i class="fab fa-instagram footerNav"></i>
         </div>
-        <div class="col pointer">
-          <div class="col"><i class="fab fa-github"></i></div>
+        <div
+          class="col pointer"
+          onclick="window.open('https://github.com/Hyeyeah')"
+        >
+          <div class="col"><i class="fab fa-github footerNav"></i></div>
         </div>
       </div>
     </section>

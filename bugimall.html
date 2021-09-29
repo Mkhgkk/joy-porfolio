@@ -36,14 +36,19 @@
         </div>
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a
+              class="nav-link nav active"
+              aria-current="page"
+              href="/index.html"
+              >Home</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
+            <a class="nav-link nav" href="/index.html#about">About</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link github-button" href="#">View Site</a>
-          </li> -->
+          <li class="nav-item">
+            <a class="nav-link nav" href="/index.html#contact">Contact</a>
+          </li>
         </ul>
       </div>
       <div class="container">
@@ -83,20 +88,17 @@
           </p>
         </div>
         <div class="col">
-          <img
-            src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHVuaXZlcnNpdHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            alt=""
-          />
+          <img style="width: 100%" src="assets/bugimallMain.jpeg" alt="" />
         </div>
       </div>
     </section>
 
     <!-- technology section  -->
     <section class="container">
-      <div style="text-align: center; padding: 70px">
+      <div style="text-align: center; padding: 70px; margin-top: 30px">
         <h1 style="font-family: Open Sans; font-weight: 900">Technologies</h1>
       </div>
-      <div class="row">
+      <div class="row" style="text-align: center">
         <div class="col">
           <img
             src="https://img1.baidu.com/it/u=811927623,4166245411&fm=26&fmt=auto"
@@ -139,7 +141,7 @@
 
     <!-- showcase section  -->
     <section class="container">
-      <div style="text-align: center; padding: 70px">
+      <div style="text-align: center; padding: 70px; margin-top: 30px">
         <h1 style="font-family: Open Sans; font-weight: 900">Show case</h1>
       </div>
 
@@ -152,12 +154,15 @@
           users and ruining the entire user experience.
         </p>
         <img
-          style="width: 100%; border-radius: 5px"
+          style="width: 100%; border-radius: 5px; margin-top: 20px"
           src="assets/screens-showcase.png"
           alt=""
         />
       </div>
-      <div class="row gx-1" style="padding-top: 50px; align-items: baseline">
+      <div
+        class="row gx-1"
+        style="padding-top: 50px; margin-top: 30px; align-items: baseline"
+      >
         <div class="col-6">
           <img
             style="width: 90%; border-radius: 5px"
@@ -180,10 +185,16 @@
 
       <div class="row gx-1" style="padding-top: 50px; align-items: center">
         <div class="col-6">
-          <h3 style="font-family: Open Sans; font-weight: 900">
+          <h3
+            style="
+              font-family: Open Sans;
+              font-weight: 900;
+              padding-right: 30px;
+            "
+          >
             We provide information, you make the choice.
           </h3>
-          <p>
+          <p style="padding-right: 30px">
             Determining which product to buy can be a daunting task and shopping
             online does not make it any easier. Bugimall provides all the
             information that a user might need to make the choice through a very
@@ -201,9 +212,9 @@
         </div>
       </div>
 
-      <div class="row gx-1" style="padding-top: 50px">
+      <div class="row gx-1" style="padding-top: 50px; margin-top: 30px">
         <div class="col-6">
-          <p>
+          <p style="padding-right: 30px">
             Add items to your cart and later come back and checkout whatever you
             want to buy in three easy steps
           </p>
@@ -214,7 +225,7 @@
           />
         </div>
         <div class="col-6">
-          <p>
+          <p style="padding-right: 30px">
             Bugimall implements maps api so that the users don't have to write
             their addresses by hand which can be slow and inccurate.
           </p>
@@ -238,20 +249,34 @@
       "
     >
       <div class="row" style="width: 30%">
-        <div onclick="navigate('/index.html')" class="col pointer">Home</div>
-        <div onclick="navigate('/index.html#about')" class="col pointer">
-          About Me
+        <div onclick="navigate('/index.html')" class="col pointer footerNav">
+          Home
         </div>
-        <div onclick="navigate('/index.html#contact')" class="col pointer">
+        <div
+          onclick="navigate('/index.html#about')"
+          class="col pointer footerNav"
+        >
+          About
+        </div>
+        <div
+          onclick="navigate('/index.html#contact')"
+          class="col pointer footerNav"
+        >
           Contact
         </div>
       </div>
-      <div class="row" style="padding-top: 20px; font-size: 20px">
-        <div class="col pointer">
-          <i class="fab fa-instagram"></i>
+      <div class="row" style="padding-top: 40px; font-size: 20px">
+        <div
+          class="col pointer"
+          onclick="window.open('https://www.instagram.com/hyeyeah/')"
+        >
+          <i class="fab fa-instagram footerNav"></i>
         </div>
-        <div class="col pointer">
-          <div class="col"><i class="fab fa-github"></i></div>
+        <div
+          class="col pointer"
+          onclick="window.open('https://github.com/Hyeyeah')"
+        >
+          <div class="col"><i class="fab fa-github footerNav"></i></div>
         </div>
       </div>
     </section>
