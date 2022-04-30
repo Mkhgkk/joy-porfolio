@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    /> -->
+
+    <title>Bugivocha</title>
+  </head>
+  <body>
+    <!-- hero section  -->
+    <section id="bugipay-hero">
+      <div
+        class="container"
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding-top: 20px;
+        "
+      >
+        <div>
+          <h1 style="font-family: Open Sans; font-weight: 900">BUGI VOCHA</h1>
+          <h1 style="font-family: montserrat; font-weight: 300">
+            Voucher Scanner App
+          </h1>
+        </div>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a
+              class="nav-link nav active"
+              aria-current="page"
+              href="/index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav" href="/index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav" href="/index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <!-- <h1
+          style="
+            font-family: Open Sans;
+            font-weight: 900;
+            font-size: 80px;
+            display: flex;
+            align-self: flex-end;
+          "
+        >
+          PORTFOLIO.
+        </h1> -->
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section id="unifella-about" class="container">
+      <div style="text-align: center; padding: 70px">
+        <h1 style="font-family: Open Sans; font-weight: 900">
+          About Bugivocha
+        </h1>
+      </div>
+      <div class="row" style="text-align: center">
+        <p>
+          Bugivocha a simple utility app for iOS that uses computer vision to
+          extract numbers from voucher cards. Voucher cards are used to top up
+          mobile air-time and pay for internet bundles in some countries.
+          Instead of entering voucher numbers manually by typing each number,
+          Bugivocha uses character recognition to extract voucher numbers from
+          an image of a voucher thus saving time and increases accuracy.
+        </p>
+      </div>
+    </section>
+
+    <!-- technologies section -->
+    <section class="container">
+      <div style="text-align: center; padding: 70px; margin-top: 30px">
+        <h1 style="font-family: Open Sans; font-weight: 900">Technologies</h1>
+      </div>
+      <div class="row" style="text-align: center">
+        <div class="col">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/558def25e4b0fc259f066636/1533603278905-AVZ8RD2X0YCPY0N3VGRZ/Swift_logo.png?format=1000w"
+            class="tech-logo"
+            alt=""
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://miro.medium.com/max/738/1*le4m-MKQ2S4XWM5fSsGbVg.png"
+            class="tech-logo"
+            alt=""
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://play-lh.googleusercontent.com/7oYf_DNF77eJr9bIoY_GuN1OmYbgQL2VkZLTUfVI4TAspf8qdSjeJpIYbNQe-Va3FJlk"
+            class="tech-logo"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- showcase section -->
+    <section class="container">
+      <div style="text-align: center; padding: 70px; margin-top: 30px">
+        <h1 style="font-family: Open Sans; font-weight: 900">Show case</h1>
+      </div>
+
+      <div style="text-align: center">
+        <img
+          style="width: 100%; border-radius: 5px"
+          src="assets/bugivocha-screens.png"
+          alt=""
+        />
+      </div>
+
+      <div class="row gx-1" style="padding-top: 50px; align-items: center">
+        <div class="col-6">
+          <h3
+            style="
+              font-family: Open Sans;
+              font-weight: 900;
+              padding-right: 30px;
+            "
+          >
+            Simple... Light-weight... Accurate
+          </h3>
+          <p style="padding-right: 30px">
+            Bugivocha uses is a native application without additional
+            dependencies which makes its bundle size extremely tiny and
+            light-weight. Google's ML kit is a cutting edge on-device machine
+            learning engine that can perform several tasks with outstanding
+            accuracy and performance speed without requiring internet
+            connection. The power of ML-kit combined with simple minimalistic
+            and lean design makes Bugivocha easy to use and highly user friendly
+            for all types of users.
+          </p>
+        </div>
+        <div class="col-6">
+          <img
+            style="width: 90%; border-radius: 5px"
+            src="/assets/vocha.gif"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="footer"
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+      "
+    >
+      <div class="row" style="width: 30%">
+        <div onclick="navigate('/index.html')" class="col pointer footerNav">
+          Home
+        </div>
+        <div
+          onclick="navigate('/index.html#about')"
+          class="col pointer footerNav"
+        >
+          About
+        </div>
+        <div
+          onclick="navigate('/index.html#contact')"
+          class="col pointer footerNav"
+        >
+          Contact
+        </div>
+      </div>
+      <div class="row" style="padding-top: 40px; font-size: 20px">
+        <div
+          class="col pointer"
+          onclick="window.open('https://www.instagram.com/hyeyeah/')"
+        >
+          <i class="fab fa-instagram footerNav"></i>
+        </div>
+        <div
+          class="col pointer"
+          onclick="window.open('https://github.com/Hyeyeah')"
+        >
+          <div class="col"><i class="fab fa-github footerNav"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/index.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+      integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/84e6f9894d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
